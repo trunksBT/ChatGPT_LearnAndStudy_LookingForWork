@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./src:/app
+    command: node app.js
